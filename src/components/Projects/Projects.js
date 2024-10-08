@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import vortex360 from "../../Assets/Projects/vortex.jpg";
 import legally from "../../Assets/Projects/legally.jpg";
-import robowars from "../../Assets/Projects/robowars.jpg";
+import robowars from "../../Assets/Projects/robowars.png";
 
 function Projects() {
   return (
@@ -18,6 +18,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={robowars}
+              isBlog={false}
+              title="Robowars"
+              description="Explore RoboVITics' Robowars website: your hub for annual events, projects, workshops, and community engagement, crafted with HTML, CSS, JavaScript, and Bootstrap. Join us in the robotics world!"
+              ghLink="https://github.com/BaibhavSureka/Robowars-2.0"
+              demoLink="https://robowars.robovitics.in"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={legally}
@@ -40,16 +52,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={robowars}
-              isBlog={false}
-              title="Robowars"
-              description="Explore RoboVITics' Robowars website: your hub for annual events, projects, workshops, and community engagement, crafted with HTML, CSS, JavaScript, and Bootstrap. Join us in the robotics world!"
-              ghLink="https://github.com/BaibhavSureka/Robowars"
-              demoLink="https://robowars.netlify.app/"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
