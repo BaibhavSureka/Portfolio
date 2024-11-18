@@ -11,11 +11,15 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Baibhav Sureka </span>
             from <span className="purple"> Bihar, India.</span>
             <br />
-            I am currently pursuing Btech in Computer Science and Engineering at VIT VELLORE.
+            I am currently pursuing Btech in Computer Science and Engineering at
+            VIT VELLORE.
+            <br />I specialize in technologies like{" "}
+            <span className="purple">Java, C++, React.js, and Node.js.</span>
+            I am particularly passionate about building scalable web
+            applications and solving complex algorithmic challenges.
             <br />
             <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            In addition to coding, I enjoy the following activities:
           </p>
           <ul>
             <li className="about-activity">

@@ -19,20 +19,25 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Hi! I'm Baibhav, a passionate programmer who fell in love with
+              coding at an early age and strives to keep improving every day.
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Python and Java. </b>
+                <b className="purple"> C++, Python, and Java. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of interest includes building innovative&nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to <b className="purple">AI/ML.</b>
+                <b className="purple">Web Technologies and Products</b> and
+                exploring areas related to <b className="purple">AI/ML.</b>
               </i>
+              <br />
+              <br />
+              I'm always looking for opportunities to collaborate on exciting
+              projects and continue to build solutions that can make an impact
+              in the tech world.
             </p>
           </Col>
 
@@ -47,7 +52,9 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Let's connect! Feel free to{" "}
+              <span className="purple">reach out</span> to me on any of the
+              platforms below.
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -55,7 +62,7 @@ function Home2() {
                   href="https://github.com/BaibhavSureka"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -65,7 +72,7 @@ function Home2() {
                   href="https://twitter.com/Baibhav02890089"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
@@ -75,7 +82,7 @@ function Home2() {
                   href="https://www.linkedin.com/in/baibhav-sureka-702257223/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -97,4 +104,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
