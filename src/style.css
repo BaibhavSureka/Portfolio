@@ -1,15 +1,7 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color: linear-gradient(to bottom left, rgba(17, 16, 16, 0.582), rgba(12, 8, 24, 0.904));
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
+  --image-gradient: linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863));
 
   --imp-text-color: #c770f0;
 }
@@ -22,6 +14,9 @@ button:focus {
   box-shadow: none !important;
 }
 
+/* --------- */
+/*  Preloader */
+/* --------- */
 #preloader {
   position: fixed;
   top: 0;
@@ -44,25 +39,34 @@ button:focus {
   height: 100vh;
 }
 
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
 ::-webkit-scrollbar {
   width: 7px;
 }
 
+/* Track */
 ::-webkit-scrollbar-track {
   background: #2d1950;
 }
 
-
+/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(178, 121, 216, 0.959);
   border-radius: 12px;
 }
 
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(222, 130, 235, 0.911);
   border-radius: 12px;
 }
 
+/* --------- */
+/* Navbar Section  */
+/* --------- */
 .sticky {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
@@ -134,10 +138,12 @@ button:focus {
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -193,12 +199,14 @@ button:focus {
   width: 100%;
 }
 
-
+/* --------- */
+/* Home section */
+/* --------- */
 .wave {
-  animation-name: wave-animation; 
-  animation-duration: 2.1s; 
-  animation-iteration-count: infinite; 
-  transform-origin: 70% 70%; 
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
@@ -206,28 +214,36 @@ button:focus {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
   }
+
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -275,6 +291,7 @@ button:focus {
   color: #be6adf !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #b562d6 !important;
@@ -286,6 +303,7 @@ button:focus {
     font-weight: 500 !important;
     position: absolute !important;
   }
+
   .Typewriter__cursor {
     display: none !important;
   }
@@ -384,12 +402,16 @@ button:focus {
   color: #700c86 !important;
 }
 
+/* --------- */
+/* Footer */
+/* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -415,6 +437,7 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -425,6 +448,9 @@ button:focus {
   color: #a588c0 !important;
 }
 
+/* --------- */
+/* Projects */
+/* --------- */
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -448,6 +474,7 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
@@ -508,16 +535,22 @@ button:focus {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
 }
+
+/* --------- */
+/* About */
+/* --------- */
 
 .about-section {
   position: relative !important;
@@ -542,6 +575,20 @@ button:focus {
   transition: all 0.4s ease 0s !important;
 }
 
+.tech-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.tech-icons a:hover {
+  color: var(--imp-text-color);
+}
+
+.tech-icons p {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
@@ -553,6 +600,7 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -575,6 +623,10 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+/* --------- */
+/* Resume */
+/* --------- */
 
 .resume-section {
   position: relative !important;
@@ -609,6 +661,7 @@ button:focus {
     padding-left: 15px !important;
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -685,10 +738,12 @@ button:focus {
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -712,6 +767,80 @@ button:focus {
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Experience Section */
+/* --------- */
+.experience-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.experience-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.experience-card-view {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.experience-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+/* --------- */
+/* Achievement Section */
+/* --------- */
+.achievement-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.achievement-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.achievement-card-view {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.achievement-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.achievement-icon {
+  font-size: 2em;
+  margin-right: 15px;
 }

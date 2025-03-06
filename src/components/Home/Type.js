@@ -1,4 +1,3 @@
-import React from "react";
 import Typewriter from "typewriter-effect";
 
 function Type() {
@@ -9,6 +8,7 @@ function Type() {
           "Software Developer",
           "Freelancer",
           "ReactJs Developer",
+          "Full Stack Developer",
           "Open Source Contributor",
           "IOT Student",
         ],
@@ -19,6 +19,5 @@ function Type() {
     />
   );
 }
-
 
 export default Type;

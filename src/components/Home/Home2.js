@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
@@ -19,31 +18,42 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Hi! I'm Baibhav, a passionate programmer who fell in love with
-              coding at an early age and strives to keep improving every day.
+              Hi! I'm Baibhav, a passionate full-stack developer with a strong
+              background in{" "}
+              <b className="purple">
+                JavaScript, TypeScript, React.js, and Node.js.
+              </b>
               <br />
-              <br />I am fluent in classics like
+              <br />I have built scalable web applications and worked with{" "}
+              <b className="purple">MongoDB, SQL, and cloud technologies</b> to
+              develop efficient solutions.
+              <br />
+              <br />
+              My areas of interest include{" "}
               <i>
-                <b className="purple"> C++, Python, and Java. </b>
+                <b className="purple">
+                  Web Development, AI/ML, and Scalable System Architecture.
+                </b>
               </i>
               <br />
-              <br />
-              My field of interest includes building innovative&nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products</b> and
-                exploring areas related to <b className="purple">AI/ML.</b>
-              </i>
+              <br />I have interned at multiple companies, participated in
+              hackathons like{" "}
+              <b className="purple">DEVSOC & Flipkart Grid 6.0</b>, and
+              contributed to open-source projects.
               <br />
               <br />
-              I'm always looking for opportunities to collaborate on exciting
-              projects and continue to build solutions that can make an impact
-              in the tech world.
+              I’m always open to exciting opportunities, collaborations, and
+              discussions on innovative tech solutions!
             </p>
           </Col>
 
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg || "/placeholder.svg"}
+                className="img-fluid"
+                alt="avatar"
+              />
             </Tilt>
           </Col>
         </Row>
@@ -79,7 +89,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/baibhav-sureka-702257223/"
+                  href="https://www.linkedin.com/in/baibhavsureka/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

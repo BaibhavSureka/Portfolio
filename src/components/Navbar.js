@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -12,7 +12,8 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { FaTrophy } from "react-icons/fa";
+import { MdWorkOutline } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -38,7 +39,11 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img
+            src={logo || "/placeholder.svg"}
+            className="img-fluid logo"
+            alt="brand"
+          />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -78,6 +83,26 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdWorkOutline style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/achievements"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaTrophy style={{ marginBottom: "2px" }} /> Achievements
               </Nav.Link>
             </Nav.Item>
 
