@@ -20,8 +20,8 @@ function Achievements() {
             <AchievementCard
               icon={<FaCode />}
               title="Competitive Programming"
-              description="Solved 500+ problems on LeetCode, Codeforces, and CodeChef. Secured Rank 1,837 among 40,000 participants in LeetCode Weekly Contest 409."
-              link="https://leetcode.com/BaibhavSureka/"
+              description="Solved 600+ problems on LeetCode, Codeforces, and CodeChef."
+              link="https://codolio.com/profile/Baibhav_Sureka"
             />
           </Col>
           <Col md={6} className="achievement-card">
@@ -44,8 +44,8 @@ function Achievements() {
             <AchievementCard
               icon={<FaRankingStar />}
               title="Coding Profiles"
-              description="Achieved impressive ratings across multiple competitive coding platforms."
-              link="https://leetcode.com/BaibhavSureka/"
+              description="Secured Rank 1,837 among 40,000 participants in LeetCode Weekly Contest 409. Achieved impressive ratings across multiple competitive coding platforms."
+              link="https://leetcode.com/u/baibhavsureka/"
             />
           </Col>
         </Row>
